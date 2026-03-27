@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jitendradeka0111-stack/kohua-website
+  repo: jitendradeka0111-stack/KOHUA
   branch: main
 
 media_folder: "static/uploads"
