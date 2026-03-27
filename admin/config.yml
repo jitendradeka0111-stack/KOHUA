@@ -51,3 +51,4 @@ collections:
         options: ["Community", "Nature", "Culture", "Tourism"]
       - { label: "Photo", name: "photo", widget: "image" }
       - { label: "Location", name: "location", widget: "string" }
+```
