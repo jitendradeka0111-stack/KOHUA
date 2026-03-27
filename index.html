@@ -247,9 +247,9 @@ footer{background:var(--text);padding:3rem 2.5rem;display:grid;grid-template-col
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Assam · Northeast India · Community · Conservation</div>
-    <h1 class="hero-title">Rooted in Assam.<br><em>Working</em> for the Northeast.</h1>
-    <p class="hero-desc">KOHUA is a community-led NGO from Assam, working across Northeast India for responsible tourism, conservation, art, music, and the living traditions of indigenous peoples.</p>
+    <div class="hero-eyebrow" id="ed-eyebrow">Assam · Northeast India · Community · Conservation</div>
+    <h1 class="hero-title" id="ed-hero-title">Rooted in Assam.<br><em>Working</em> for the Northeast.</h1>
+    <p class="hero-desc" id="ed-hero-desc">KOHUA is a community-led NGO from Assam, working across Northeast India for responsible tourism, conservation, art, music, and the living traditions of indigenous peoples.</p>
     <div class="hero-btns">
       <button class="btn-clay" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Explore Our Work</button>
       <button class="btn-outline-w" onclick="document.getElementById('elibrary').scrollIntoView({behavior:'smooth'})">Visit the E-Library</button>
@@ -283,9 +283,9 @@ footer{background:var(--text);padding:3rem 2.5rem;display:grid;grid-template-col
     <p>KOHUA was born in Assam out of a deep love for Northeast India — its people, its forests, its songs, and its stories. We saw how fast-changing tourism and modernisation were reshaping indigenous communities, and we chose to act.</p>
     <p>We work across the eight states of Northeast India with villages, artists, musicians, and storytellers to build a future where tradition and progress walk side by side.</p>
     <div class="stats-row">
-      <div><div class="stat-num">8</div><div class="stat-label">States, One Region</div></div>
-      <div><div class="stat-num">40+</div><div class="stat-label">Artists Supported</div></div>
-      <div><div class="stat-num">500+</div><div class="stat-label">Lives Touched</div></div>
+      <div><div class="stat-num" id="ed-stat-states">8</div><div class="stat-label">States, One Region</div></div>
+      <div><div class="stat-num" id="ed-stat-artists">40+</div><div class="stat-label">Artists Supported</div></div>
+      <div><div class="stat-num" id="ed-stat-lives">500+</div><div class="stat-label">Lives Touched</div></div>
     </div>
   </div>
 </section>
@@ -325,31 +325,27 @@ footer{background:var(--text);padding:3rem 2.5rem;display:grid;grid-template-col
   <div class="section-tag">Voices from the field</div>
   <div class="section-title">Stories from the ground</div>
   <div class="stories-grid">
-    <div class="story-card">
+    <div class="story-card" id="story-card-1">
       <div class="story-card-img"><div class="sc-ph sc1"><div class="sc-icon">🌿</div></div><div class="story-tag">Field Report</div></div>
       <div class="story-card-body">
         <h3>How a village in Arunachal chose tourism over logging</h3>
         <div class="story-meta">March 2026 · Arunachal Pradesh</div>
         <p>When the logging company came with offers, the elders of Ziro valley had another idea. KOHUA worked alongside them to build an alternative that preserved both livelihood and forest.</p>
         <span class="story-read">Read the full story →</span>
-      </div>
-    </div>
-    <div class="story-card">
+      </di<div class="story-card" id="story-card-2">lass="story-card">
       <div class="story-card-img"><div class="sc-ph sc2"><div class="sc-icon">🧵</div></div><div class="story-tag">Community Voice</div></div>
       <div class="story-card-body">
         <h3>The last weaver of her village remembers</h3>
         <div class="story-meta">February 2026 · Assam</div>
         <p>Ranjita Bora, 72, is the only person left who knows the full pattern of the traditional Mishing weave. We sat with her for three days, recording every thread of memory.</p>
-        <span class="story-read">Read the full story →</span>
-      </div>
-    </div>
+        <span class="story-read">Read the full story →<div class="story-card" id="story-card-3"> </div>
     <div class="story-card">
       <div class="story-card-img"><div class="sc-ph sc3"><div class="sc-icon">🌳</div></div><div class="story-tag">Conservation</div></div>
       <div class="story-card-body">
         <h3>Children who became forest guardians in Meghalaya</h3>
         <div class="story-meta">January 2026 · Meghalaya</div>
         <p>A KOHUA pilot with 40 schoolchildren in East Khasi Hills led to community-led protection of over 200 acres of sacred grove — driven entirely by the children themselves.</p>
-        <span class="story-read">Read the full story →</span>
+        <span class="story-read">Rea<div class="story-card" id="story-card-4">>
       </div>
     </div>
     <div class="story-card">
@@ -424,8 +420,8 @@ footer{background:var(--text);padding:3rem 2.5rem;display:grid;grid-template-col
       <button class="lib-tab" onclick="switchTab('doc',this)">Documentaries</button>
     </div>
     <div class="lib-grid" id="libGrid">
-      <div class="lib-item" data-type="folk"><div class="lib-cover lc1"><div class="lib-cover-icon">📖</div><div class="lib-cover-type">Folk Tale</div></div><div class="lib-info"><h4>The Tiger Who Forgot the Forest</h4><p>Assam · Oral tradition, retold</p><span class="lib-badge badge-folk">Folk Tale</span></div></div>
-      <div class="lib-item" data-type="field"><div class="lib-cover lc2"><div class="lib-cover-icon">📋</div><div class="lib-cover-type">Field Story</div></div><div class="lib-info"><h4>Voices from Ziro Valley</h4><p>Arunachal Pradesh · 2025</p><span class="lib-badge badge-story">Field Story</span></div></div>
+      <div class="lib-item" id="lib-item-1" data-type="folk"><div class="lib-cover lc1"><div class="lib-cover-icon">📖</div><div class="lib-cover-type">Folk Tale</div></div><div class="lib-info"><h4>The Tiger Who Forgot the Forest</h4><p>Assam · Oral tradition, retold</p><span class="lib-badge badge-folk">Folk Tale</span></div></div>
+      <div class="lib-item" id="lib-item-2" data-type="field"><div class="lib-cover lc2"><div class="lib-cover-icon">📋</div><div class="lib-cover-type">Field Story</div></div><div class="lib-info"><h4>Voices from Ziro Valley</h4><p>Arunachal Pradesh · 2025</p><span class="lib-badge badge-story">Field Story</span></div></div>
       <div class="lib-item" data-type="doc"><div class="lib-cover lc3"><div class="lib-cover-icon">🎬</div><div class="lib-cover-type">Documentary</div></div><div class="lib-info"><h4>Rivers of Memory</h4><p>42 min · Brahmaputra Basin</p><span class="lib-badge badge-doc">Documentary</span></div></div>
       <div class="lib-item" data-type="book"><div class="lib-cover lc4"><div class="lib-cover-icon">🎨</div><div class="lib-cover-type">Illustrated Book</div></div><div class="lib-info"><h4>Nini and the Dancing Moon</h4><p>Children's storybook · Mising community</p><span class="lib-badge badge-book">Illustrated Book</span></div></div>
       <div class="lib-item" data-type="folklore"><div class="lib-cover lc5"><div class="lib-cover-icon">🌙</div><div class="lib-cover-type">Folklore</div></div><div class="lib-info"><h4>Why the Hornbill Wears Gold</h4><p>Nagaland · Creation story</p><span class="lib-badge badge-folklore">Folklore</span></div></div>
@@ -549,5 +545,401 @@ function doSearch(){
 }
 document.getElementById('libSearch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch()})
 </script>
+
+<!-- KOHUA INLINE CMS -->
+<div id="cms-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0e0a05;border-top:2px solid #c4723a;padding:.6rem 1.5rem;display:none;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+  <div style="font-family:Georgia,serif;font-size:.9rem;color:#e8d5b0;letter-spacing:.08em">KO<span style="color:#c4723a">H</span>UA <span style="font-family:sans-serif;font-size:.7rem;color:rgba(232,213,176,0.4)">Admin Mode</span></div>
+  <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+    <button onclick="cmsOpen('hero')" style="background:rgba(196,114,58,0.15);color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">Hero</button>
+    <button onclick="cmsOpen('stories')" style="background:rgba(196,114,58,0.15);color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">Stories</button>
+    <button onclick="cmsOpen('gallery')" style="background:rgba(196,114,58,0.15);color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">Gallery</button>
+    <button onclick="cmsOpen('library')" style="background:rgba(196,114,58,0.15);color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">E-Library</button>
+    <button onclick="cmsOpen('settings')" style="background:rgba(196,114,58,0.15);color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">Settings</button>
+    <button onclick="cmsLogout()" style="background:transparent;color:rgba(232,213,176,0.4);border:1px solid rgba(232,213,176,0.15);padding:.35rem .9rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif">Logout</button>
+  </div>
+</div>
+
+<!-- CMS LOGIN -->
+<div id="cms-login" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(10,7,2,0.97);display:none;align-items:center;justify-content:center">
+  <div style="background:#2c1f0e;border:1px solid rgba(196,114,58,0.25);border-radius:8px;padding:2.5rem;max-width:360px;width:90%;text-align:center">
+    <div style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;letter-spacing:.12em;color:#e8d5b0;margin-bottom:.3rem">KO<span style="color:#c4723a">H</span>UA</div>
+    <div style="font-size:11px;color:rgba(232,213,176,0.35);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.8rem">Admin Login</div>
+    <input type="password" id="cms-pw" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')cmsLogin()" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(232,213,176,0.15);color:#e8d5b0;padding:.75rem 1rem;font-size:13px;border-radius:4px;outline:none;margin-bottom:1rem;font-family:sans-serif"/>
+    <button onclick="cmsLogin()" style="width:100%;background:#c4723a;color:#fff;border:none;padding:.8rem;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:sans-serif">Enter</button>
+    <div id="cms-pw-err" style="color:#e07070;font-size:12px;margin-top:.7rem;display:none">Wrong password</div>
+    <button onclick="document.getElementById('cms-login').style.display='none'" style="background:transparent;color:rgba(232,213,176,0.3);border:none;font-size:11px;cursor:pointer;margin-top:1rem;font-family:sans-serif">Cancel</button>
+  </div>
+</div>
+
+<!-- CMS MODAL -->
+<div id="cms-modal" style="display:none;position:fixed;inset:0;z-index:10001;background:rgba(10,7,2,0.85);overflow-y:auto">
+  <div style="max-width:700px;margin:2rem auto;padding:0 1rem">
+    <div style="background:#1a1208;border:1px solid rgba(196,114,58,0.2);border-radius:8px;overflow:hidden">
+      <div style="background:#0e0a05;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(196,114,58,0.15)">
+        <div id="cms-modal-title" style="font-family:Georgia,serif;font-size:1.1rem;color:#e8d5b0"></div>
+        <button onclick="cmsClose()" style="background:transparent;color:rgba(232,213,176,0.4);border:none;font-size:1.3rem;cursor:pointer;padding:0 .3rem">✕</button>
+      </div>
+      <div id="cms-modal-body" style="padding:1.5rem"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const CMS_PW = 'kohua2026';
+let cmsLoggedIn = sessionStorage.getItem('kohua_cms') === '1';
+
+// Load saved content from localStorage
+let KD = {};
+try{ KD = JSON.parse(localStorage.getItem('kohua_content')||'{}'); }catch(e){}
+
+// Apply saved content on page load
+function applyContent(){
+  if(KD.eyebrow) safeSet('ed-eyebrow', KD.eyebrow);
+  if(KD.heroTitle) safeSet('ed-hero-title', KD.heroTitle);
+  if(KD.heroDesc) safeSet('ed-hero-desc', KD.heroDesc);
+  if(KD.statStates) safeSet('ed-stat-states', KD.statStates);
+  if(KD.statArtists) safeSet('ed-stat-artists', KD.statArtists);
+  if(KD.statLives) safeSet('ed-stat-lives', KD.statLives);
+  if(KD.stories) renderStories();
+  if(KD.library) renderLibrary();
+}
+
+function safeSet(id, val){ const el=document.getElementById(id); if(el) el.innerHTML=val; }
+function safeVal(id){ const el=document.getElementById(id); return el?el.innerHTML:''; }
+
+function saveKD(){ localStorage.setItem('kohua_content', JSON.stringify(KD)); }
+
+// Show admin bar if logged in
+window.addEventListener('load', function(){
+  applyContent();
+  if(cmsLoggedIn){
+    document.getElementById('cms-bar').style.display='flex';
+  }
+});
+
+// Secret key combo to open login: press Shift+A+D+M simultaneously won't work
+// Instead: click bottom-right corner 5 times fast
+let cornerClicks=0, cornerTimer=null;
+document.addEventListener('click', function(e){
+  if(e.clientX > window.innerWidth-60 && e.clientY > window.innerHeight-60){
+    cornerClicks++;
+    clearTimeout(cornerTimer);
+    cornerTimer=setTimeout(()=>cornerClicks=0, 2000);
+    if(cornerClicks>=5){
+      cornerClicks=0;
+      if(!cmsLoggedIn) openLogin();
+    }
+  }
+});
+
+function openLogin(){
+  const l=document.getElementById('cms-login');
+  l.style.display='flex';
+  setTimeout(()=>document.getElementById('cms-pw').focus(),100);
+}
+
+function cmsLogin(){
+  if(document.getElementById('cms-pw').value===CMS_PW){
+    cmsLoggedIn=true;
+    sessionStorage.setItem('kohua_cms','1');
+    document.getElementById('cms-login').style.display='none';
+    document.getElementById('cms-bar').style.display='flex';
+    document.getElementById('cms-pw').value='';
+  } else {
+    document.getElementById('cms-pw-err').style.display='block';
+  }
+}
+
+function cmsLogout(){
+  cmsLoggedIn=false;
+  sessionStorage.removeItem('kohua_cms');
+  document.getElementById('cms-bar').style.display='none';
+}
+
+function cmsOpen(section){
+  const modal=document.getElementById('cms-modal');
+  const title=document.getElementById('cms-modal-title');
+  const body=document.getElementById('cms-modal-body');
+  modal.style.display='block';
+
+  const inp = (id,label,val,type='text')=>`<div style="margin-bottom:1rem"><label style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(232,213,176,0.45);margin-bottom:.4rem">${label}</label><${type==='textarea'?'textarea':'input'} id="${id}" ${type!=='textarea'?`type="${type}"`:''}style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.65rem .9rem;font-family:sans-serif;font-size:13px;border-radius:4px;outline:none;${type==='textarea'?'min-height:80px;resize:vertical;':''}line-height:1.5"${type==='textarea'?`>${val}</textarea>`:`value="${val.replace(/"/g,'&quot;')}">`}`;
+
+  if(section==='hero'){
+    title.textContent='Edit Hero Section';
+    body.innerHTML=`
+      ${inp('cms-eyebrow','Top Label (Eyebrow)',safeVal('ed-eyebrow'))}
+      ${inp('cms-hero-title','Main Headline',safeVal('ed-hero-title'),'textarea')}
+      ${inp('cms-hero-desc','Description',safeVal('ed-hero-desc'),'textarea')}
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.8rem;margin-bottom:1rem">
+        <div><label style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(232,213,176,0.45);margin-bottom:.4rem">States</label><input id="cms-states" value="${safeVal('ed-stat-states')}" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.65rem .9rem;font-family:sans-serif;font-size:13px;border-radius:4px;outline:none"></div>
+        <div><label style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(232,213,176,0.45);margin-bottom:.4rem">Artists</label><input id="cms-artists" value="${safeVal('ed-stat-artists')}" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.65rem .9rem;font-family:sans-serif;font-size:13px;border-radius:4px;outline:none"></div>
+        <div><label style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(232,213,176,0.45);margin-bottom:.4rem">Lives</label><input id="cms-lives" value="${safeVal('ed-stat-lives')}" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.65rem .9rem;font-family:sans-serif;font-size:13px;border-radius:4px;outline:none"></div>
+      </div>
+      <button onclick="saveHero()" style="background:#c4723a;color:#fff;border:none;padding:.7rem 2rem;font-size:12px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:sans-serif">Save Changes</button>`;
+  }
+
+  else if(section==='stories'){
+    title.textContent='Edit Stories from the Ground';
+    let storyData = KD.stories || [
+      {id:1,title:'How a village in Arunachal chose tourism over logging',meta:'March 2026 · Arunachal Pradesh',category:'Field Report',summary:'When the logging company came with offers, the elders of Ziro valley had another idea. KOHUA worked alongside them to build an alternative that preserved both livelihood and forest.'},
+      {id:2,title:'The last weaver of her village remembers',meta:'February 2026 · Assam',category:'Community Voice',summary:'Ranjita Bora, 72, is the only person left who knows the full pattern of the traditional Mishing weave. We sat with her for three days, recording every thread of memory.'},
+      {id:3,title:'Children who became forest guardians in Meghalaya',meta:'January 2026 · Meghalaya',category:'Conservation',summary:'A KOHUA pilot with 40 schoolchildren in East Khasi Hills led to community-led protection of over 200 acres of sacred grove.'},
+      {id:4,title:'Bringing a forgotten song back to its homeland',meta:'December 2025 · Nagaland',category:'Music',summary:'A folk song recorded in 1967 found its way home — back to the village in Nagaland where it was first sung. The reunion moved everyone to tears.'}
+    ];
+    KD.stories = storyData;
+    renderStoriesEditor(storyData);
+  }
+
+  else if(section==='library'){
+    title.textContent='Edit E-Library';
+    let libData = KD.library || [
+      {id:1,title:'The Tiger Who Forgot the Forest',type:'Folk Tale',region:'Assam · Oral tradition'},
+      {id:2,title:'Rivers of Memory',type:'Documentary',region:'Brahmaputra Basin · 42 min'},
+      {id:3,title:'Why the Hornbill Wears Gold',type:'Folklore',region:'Nagaland · Creation story'},
+      {id:4,title:'Nini and the Dancing Moon',type:'Illustrated Book',region:'Mising community'},
+      {id:5,title:'The Seven Hills of Mizoram',type:'Folklore',region:'Mizoram · Creation myth'},
+      {id:6,title:'Salt and Silence',type:'Field Story',region:'Tripura · 2024'},
+      {id:7,title:'The Sound of Bamboo',type:'Documentary',region:'Northeast · 35 min'},
+      {id:8,title:'The Boy and the Hornbill',type:'Illustrated Book',region:'Nagaland'},
+    ];
+    KD.library = libData;
+    renderLibraryEditor(libData);
+  }
+
+  else if(section==='gallery'){
+    title.textContent='Edit Gallery Captions';
+    body.innerHTML=`
+      <p style="font-size:12px;color:rgba(232,213,176,0.4);margin-bottom:1.2rem;line-height:1.6">Edit the captions and categories for your gallery photos. To replace photos, send them to KOHUA admin.</p>
+      <div id="gallery-editor"></div>
+      <button onclick="saveGalleryEdits()" style="background:#c4723a;color:#fff;border:none;padding:.7rem 2rem;font-size:12px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:sans-serif;margin-top:1rem">Save Changes</button>`;
+    let galleryData = KD.gallery || [
+      {id:1,label:'Community gathering · Assam',cat:'community'},
+      {id:2,label:'Forest trekking and birding · Assam',cat:'nature'},
+      {id:3,label:'Nature education through art',cat:'culture'},
+      {id:4,label:'Cultural discussion · Assam',cat:'culture'},
+      {id:5,label:'Northeast forest',cat:'nature'},
+      {id:6,label:'Village trail · Northeast India',cat:'tourism'},
+      {id:7,label:'Community workshop · Assam',cat:'community'},
+      {id:8,label:'Cultural documentation',cat:'culture'},
+    ];
+    KD.gallery = galleryData;
+    document.getElementById('gallery-editor').innerHTML = galleryData.map((g,i)=>`
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(232,213,176,0.08);border-radius:4px;padding:.8rem 1rem;margin-bottom:.6rem;display:grid;grid-template-columns:1fr auto;gap:.8rem;align-items:center">
+        <input id="gl-label-${i}" value="${g.label}" style="background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none;width:100%">
+        <select id="gl-cat-${i}" style="background:#2c1f0e;border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .6rem;font-family:sans-serif;font-size:11px;border-radius:3px;outline:none">
+          ${['community','nature','culture','tourism'].map(c=>`<option ${g.cat===c?'selected':''}>${c}</option>`).join('')}
+        </select>
+      </div>`).join('');
+  }
+
+  else if(section==='settings'){
+    title.textContent='Site Settings';
+    let s = KD.settings || {};
+    body.innerHTML=`
+      ${inp('cms-set-email','Contact Email',s.email||'kohua@youremail.com')}
+      ${inp('cms-set-instagram','Instagram URL',s.instagram||'https://www.instagram.com/kohua_community/')}
+      ${inp('cms-set-facebook','Facebook URL',s.facebook||'')}
+      ${inp('cms-set-aboutp1','About Paragraph 1',s.aboutp1||'KOHUA was born in Assam out of a deep love for Northeast India — its people, its forests, its songs, and its stories.','textarea')}
+      ${inp('cms-set-aboutp2','About Paragraph 2',s.aboutp2||'We work across the eight states of Northeast India with villages, artists, musicians, and storytellers to build a future where tradition and progress walk side by side.','textarea')}
+      <button onclick="saveSettings()" style="background:#c4723a;color:#fff;border:none;padding:.7rem 2rem;font-size:12px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:sans-serif">Save Settings</button>`;
+  }
+}
+
+function renderStoriesEditor(stories){
+  const body=document.getElementById('cms-modal-body');
+  body.innerHTML=`
+    <button onclick="addStory()" style="background:transparent;color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.5rem 1.2rem;font-size:11px;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:3px;font-family:sans-serif;margin-bottom:1.2rem">+ Add New Story</button>
+    <div id="stories-editor">${stories.map((s,i)=>storyCard(s,i)).join('')}</div>`;
+}
+
+function storyCard(s,i){
+  return `<div id="sc-${s.id}" style="background:rgba(255,255,255,0.03);border:1px solid rgba(232,213,176,0.08);border-radius:6px;padding:1.2rem;margin-bottom:.8rem">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:.5rem;margin-bottom:.8rem;align-items:start">
+      <input id="st-title-${s.id}" value="${s.title.replace(/"/g,'&quot;')}" placeholder="Story title" style="background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.15);color:#e8d5b0;padding:.55rem .8rem;font-family:sans-serif;font-size:13px;border-radius:3px;outline:none;width:100%;font-weight:500">
+      <button onclick="deleteStory(${s.id})" style="background:rgba(180,50,50,0.1);color:#e07070;border:1px solid rgba(180,50,50,0.2);padding:.4rem .8rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif;white-space:nowrap">Delete</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.6rem">
+      <input id="st-meta-${s.id}" value="${s.meta||''}" placeholder="Date · Location" style="background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none">
+      <select id="st-cat-${s.id}" style="background:#1a1208;border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none">
+        ${['Field Report','Community Voice','Conservation','Music','Culture','Tourism'].map(c=>`<option ${s.category===c?'selected':''}>${c}</option>`).join('')}
+      </select>
+    </div>
+    <textarea id="st-sum-${s.id}" placeholder="Short summary shown on card..." style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.55rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none;min-height:70px;resize:vertical;line-height:1.5">${s.summary||''}</textarea>
+    <div style="text-align:right;margin-top:.5rem"><button onclick="saveOneStory(${s.id})" style="background:#c4723a;color:#fff;border:none;padding:.45rem 1.2rem;font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;border-radius:3px;font-family:sans-serif">Save</button></div>
+  </div>`;
+}
+
+function addStory(){
+  const newStory = {id:Date.now(),title:'New Story',meta:'2026 · Assam',category:'Field Report',summary:''};
+  KD.stories = KD.stories||[];
+  KD.stories.unshift(newStory);
+  saveKD();
+  document.getElementById('stories-editor').innerHTML = KD.stories.map((s,i)=>storyCard(s,i)).join('');
+  renderStories();
+}
+
+function saveOneStory(id){
+  const s = KD.stories.find(x=>x.id==id);
+  if(s){
+    s.title = document.getElementById('st-title-'+id).value;
+    s.meta = document.getElementById('st-meta-'+id).value;
+    s.category = document.getElementById('st-cat-'+id).value;
+    s.summary = document.getElementById('st-sum-'+id).value;
+    saveKD(); renderStories();
+    showCmsToast('Story saved!');
+  }
+}
+
+function deleteStory(id){
+  if(confirm('Delete this story?')){
+    KD.stories = KD.stories.filter(s=>s.id!=id);
+    saveKD();
+    document.getElementById('stories-editor').innerHTML = KD.stories.map((s,i)=>storyCard(s,i)).join('');
+    renderStories();
+    showCmsToast('Story deleted');
+  }
+}
+
+function renderStories(){
+  const grid = document.querySelector('.stories-grid');
+  if(!grid||!KD.stories) return;
+  const cats = {
+    'Field Report':'sc1','Community Voice':'sc2','Conservation':'sc3',
+    'Music':'sc4','Culture':'sc1','Tourism':'sc2'
+  };
+  grid.innerHTML = KD.stories.map(s=>`
+    <div class="story-card">
+      <div class="story-card-img"><div class="sc-ph ${cats[s.category]||'sc1'}" style="height:100%"><div class="sc-icon">🌿</div></div><div class="story-tag">${s.category}</div></div>
+      <div class="story-card-body">
+        <h3>${s.title}</h3>
+        <div class="story-meta">${s.meta||''}</div>
+        <p>${s.summary||''}</p>
+        <span class="story-read">Read the full story →</span>
+      </div>
+    </div>`).join('');
+}
+
+function renderLibraryEditor(items){
+  const body=document.getElementById('cms-modal-body');
+  body.innerHTML=`
+    <button onclick="addLibItem()" style="background:transparent;color:#c4723a;border:1px solid rgba(196,114,58,0.3);padding:.5rem 1.2rem;font-size:11px;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:3px;font-family:sans-serif;margin-bottom:1.2rem">+ Add New Entry</button>
+    <div id="lib-editor">${items.map(l=>libCard(l)).join('')}</div>`;
+}
+
+function libCard(l){
+  const types=['Folk Tale','Folklore','Field Story','Illustrated Book','Documentary'];
+  return `<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(232,213,176,0.08);border-radius:6px;padding:1rem;margin-bottom:.7rem">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:.5rem;margin-bottom:.6rem">
+      <input id="lb-title-${l.id}" value="${l.title.replace(/"/g,'&quot;')}" style="background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.15);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:13px;border-radius:3px;outline:none;width:100%">
+      <button onclick="deleteLibItem(${l.id})" style="background:rgba(180,50,50,0.1);color:#e07070;border:1px solid rgba(180,50,50,0.2);padding:.4rem .8rem;font-size:11px;cursor:pointer;border-radius:3px;font-family:sans-serif">Delete</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.5rem">
+      <select id="lb-type-${l.id}" style="background:#1a1208;border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none">
+        ${types.map(t=>`<option ${l.type===t?'selected':''}>${t}</option>`).join('')}
+      </select>
+      <input id="lb-region-${l.id}" value="${l.region||''}" placeholder="Region / origin" style="background:rgba(255,255,255,0.05);border:1px solid rgba(232,213,176,0.12);color:#e8d5b0;padding:.5rem .8rem;font-family:sans-serif;font-size:12px;border-radius:3px;outline:none">
+    </div>
+    <div style="text-align:right"><button onclick="saveLibItem(${l.id})" style="background:#c4723a;color:#fff;border:none;padding:.4rem 1rem;font-size:11px;font-weight:500;cursor:pointer;border-radius:3px;font-family:sans-serif;letter-spacing:.05em">Save</button></div>
+  </div>`;
+}
+
+function addLibItem(){
+  const item={id:Date.now(),title:'New Entry',type:'Folk Tale',region:'Northeast India'};
+  KD.library=KD.library||[];
+  KD.library.unshift(item);
+  saveKD();
+  document.getElementById('lib-editor').innerHTML=KD.library.map(l=>libCard(l)).join('');
+  renderLibrary();
+}
+
+function saveLibItem(id){
+  const l=KD.library.find(x=>x.id==id);
+  if(l){
+    l.title=document.getElementById('lb-title-'+id).value;
+    l.type=document.getElementById('lb-type-'+id).value;
+    l.region=document.getElementById('lb-region-'+id).value;
+    saveKD(); renderLibrary(); showCmsToast('Entry saved!');
+  }
+}
+
+function deleteLibItem(id){
+  if(confirm('Delete this entry?')){
+    KD.library=KD.library.filter(l=>l.id!=id);
+    saveKD();
+    document.getElementById('lib-editor').innerHTML=KD.library.map(l=>libCard(l)).join('');
+    renderLibrary(); showCmsToast('Entry deleted');
+  }
+}
+
+function renderLibrary(){
+  const grid=document.getElementById('libGrid');
+  if(!grid||!KD.library) return;
+  const icons={'Folk Tale':'📖','Folklore':'🌙','Field Story':'📋','Illustrated Book':'🎨','Documentary':'🎬'};
+  const badges={'Folk Tale':'badge-folk','Folklore':'badge-folklore','Field Story':'badge-story','Illustrated Book':'badge-book','Documentary':'badge-doc'};
+  const covers=['lc1','lc2','lc3','lc4','lc5','lc6'];
+  grid.innerHTML=KD.library.map((l,i)=>`
+    <div class="lib-item" data-type="${l.type.toLowerCase().replace(/ /g,'-')}">
+      <div class="lib-cover ${covers[i%6]}">
+        <div class="lib-cover-icon">${icons[l.type]||'📄'}</div>
+        <div class="lib-cover-type">${l.type}</div>
+      </div>
+      <div class="lib-info">
+        <h4>${l.title}</h4>
+        <p>${l.region||''}</p>
+        <span class="lib-badge ${badges[l.type]||'badge-story'}">${l.type}</span>
+      </div>
+    </div>`).join('');
+}
+
+function saveHero(){
+  KD.eyebrow=document.getElementById('cms-eyebrow').value;
+  KD.heroTitle=document.getElementById('cms-hero-title').value;
+  KD.heroDesc=document.getElementById('cms-hero-desc').value;
+  KD.statStates=document.getElementById('cms-states').value;
+  KD.statArtists=document.getElementById('cms-artists').value;
+  KD.statLives=document.getElementById('cms-lives').value;
+  saveKD();
+  safeSet('ed-eyebrow',KD.eyebrow);
+  safeSet('ed-hero-title',KD.heroTitle);
+  safeSet('ed-hero-desc',KD.heroDesc);
+  safeSet('ed-stat-states',KD.statStates);
+  safeSet('ed-stat-artists',KD.statArtists);
+  safeSet('ed-stat-lives',KD.statLives);
+  cmsClose(); showCmsToast('Hero updated!');
+}
+
+function saveGalleryEdits(){
+  KD.gallery.forEach((g,i)=>{
+    g.label=document.getElementById('gl-label-'+i).value;
+    g.cat=document.getElementById('gl-cat-'+i).value;
+  });
+  saveKD(); cmsClose(); showCmsToast('Gallery captions saved!');
+}
+
+function saveSettings(){
+  KD.settings={
+    email:document.getElementById('cms-set-email').value,
+    instagram:document.getElementById('cms-set-instagram').value,
+    facebook:document.getElementById('cms-set-facebook').value,
+    aboutp1:document.getElementById('cms-set-aboutp1').value,
+    aboutp2:document.getElementById('cms-set-aboutp2').value
+  };
+  saveKD();
+  // Apply settings to page
+  const emailLinks=document.querySelectorAll('a[href^="mailto"]');
+  emailLinks.forEach(a=>a.href='mailto:'+KD.settings.email);
+  cmsClose(); showCmsToast('Settings saved!');
+}
+
+function cmsClose(){ document.getElementById('cms-modal').style.display='none'; }
+
+function showCmsToast(msg){
+  let t=document.getElementById('cms-toast');
+  if(!t){ t=document.createElement('div'); t.id='cms-toast'; t.style.cssText='position:fixed;bottom:5rem;right:1.5rem;background:#3d5a3e;color:#9ecfa0;border:1px solid rgba(122,158,126,0.3);padding:.7rem 1.3rem;border-radius:4px;font-size:13px;z-index:99999;font-family:sans-serif'; document.body.appendChild(t); }
+  t.textContent='✓ '+msg; t.style.display='block';
+  setTimeout(()=>t.style.display='none',2500);
+}
+</script>
+
 </body>
 </html>
