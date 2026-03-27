@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: jitendradeka0111-stack/kohua-website
   branch: main
 
 media_folder: "static/uploads"
@@ -13,14 +14,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Location", name: "location", widget: "string", hint: "e.g. Assam, Arunachal Pradesh" }
+      - { label: "Location", name: "location", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - label: "Category"
         name: "category"
         widget: "select"
         options: ["Field Report", "Community Voice", "Conservation", "Music", "Culture", "Tourism"]
       - { label: "Cover Photo", name: "cover", widget: "image" }
-      - { label: "Short Summary", name: "summary", widget: "text", hint: "2-3 sentences shown on the card" }
+      - { label: "Short Summary", name: "summary", widget: "text" }
       - { label: "Full Story", name: "body", widget: "markdown" }
 
   - name: "library"
@@ -34,11 +35,8 @@ collections:
         name: "type"
         widget: "select"
         options: ["Folk Tale", "Folklore", "Field Story", "Illustrated Book", "Documentary"]
-      - { label: "Region / Origin", name: "region", widget: "string", hint: "e.g. Assam, Nagaland, Northeast India" }
-      - { label: "Year", name: "year", widget: "string" }
-      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Region", name: "region", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "File / Link", name: "file", widget: "file", required: false }
 
   - name: "gallery"
     label: "Photo Gallery"
@@ -53,17 +51,3 @@ collections:
         options: ["Community", "Nature", "Culture", "Tourism"]
       - { label: "Photo", name: "photo", widget: "image" }
       - { label: "Location", name: "location", widget: "string" }
-
-  - name: "settings"
-    label: "Site Settings"
-    files:
-      - label: "General Info"
-        name: "general"
-        file: "content/settings/general.yml"
-        fields:
-          - { label: "Artists Supported", name: "artists", widget: "number" }
-          - { label: "Lives Touched", name: "lives", widget: "number" }
-          - { label: "States Working In", name: "states", widget: "number" }
-          - { label: "Contact Email", name: "email", widget: "string" }
-          - { label: "Instagram URL", name: "instagram", widget: "string" }
-          - { label: "Facebook URL", name: "facebook", widget: "string" }
